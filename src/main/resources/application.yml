@@ -27,3 +27,8 @@ spring:
     console:
       enabled: true
       path: /database
+
+############
+config:
+  cors:
+    front: http://127.0.0.1:5173/
