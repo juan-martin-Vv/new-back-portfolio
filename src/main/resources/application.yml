@@ -10,6 +10,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+      jakarta:
+        persistence:
+          sharedCache: mode
   
   application:
     name: profile-application
@@ -27,8 +30,14 @@ spring:
     console:
       enabled: true
       path: /database
-
+  security:
+    oauth2:
+      resouceserver:
+        jwt:
 ############
 config:
   cors:
     front: http://127.0.0.1:5173/
+##########
+key:
+  location: /keys/key-jwt.pub
